@@ -1,0 +1,115 @@
+﻿<Window x:Class="texts.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:texts"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="145*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="119*"/>
+                <ColumnDefinition Width="145*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="5*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <TextBox Grid.Row="1"
+                     Name="textbox1" Grid.ColumnSpan="2"
+                     BorderThickness="6"
+                     BorderBrush="Black"
+                     FontSize="30"></TextBox>
+
+
+            <Button Grid.Row="0" 
+                    Content="select all"
+                    Foreground="Black"
+                    FontSize="25"
+                    Background="Transparent"
+                    Margin="291,10,38,5" Click="Button_Click_1"
+                    BorderThickness="3"
+                    BorderBrush="Black" Grid.Column="1"/>
+
+            <Button Grid.Row="0" 
+                    Content="paste"
+                    Foreground="Black"
+                    FontSize="25"
+                    Background="Transparent"
+                    Margin="205,10,149,5" Click="Button_Click_2"
+                    BorderThickness="3"
+                    BorderBrush="Black" Grid.Column="1"/>
+
+            <Button Grid.Row="0" 
+                    Content="copy"
+                    Foreground="Black"
+                    FontSize="25"
+                    Background="Transparent"
+                    Margin="132,10,235,5" Click="Button_Click_3"
+                    BorderThickness="3"
+                    BorderBrush="Black" Grid.Column="1"/>
+
+            <Button Grid.Row="0" 
+                    Content="cut"
+                    Foreground="Black"
+                    FontSize="25"
+                    Background="Transparent"
+                    Margin="76,10,308,5" Click="Button_Click_4"
+                    BorderThickness="3"
+                    BorderBrush="Black" Grid.Column="1"/>
+
+
+            <Button Grid.Row="0" 
+                    Content="save"
+                    Foreground="Black"
+                    FontSize="25"
+                    Background="Transparent"
+                    Margin="8,10,364,5" Click="Button_Click_5"
+                    BorderThickness="3"
+                    BorderBrush="Black" Grid.Column="1"/>
+
+            <CheckBox
+                Grid.Row="0"
+                Foreground="Black"
+                Background="Transparent" 
+                Margin="328,26,432,22"
+                BorderThickness="3"
+                BorderBrush="Black"
+                FontSize="25" Grid.ColumnSpan="2"
+                Click="CheckBox_Click"
+                />
+
+
+            <TextBox
+                Grid.Row="0"
+                Foreground="Black"
+                Background="Transparent" 
+                 FontSize="25"
+                BorderBrush="Black"
+                BorderThickness="4" Margin="10,14,166,14
+                "
+                Text="TaskText.txt"
+                Name="textbox2"
+                />
+            <Button Grid.Column="0"
+                    Foreground="Black"
+                    Background="Transparent"
+                    BorderBrush="Black"
+                    BorderThickness="3"
+                    Margin="187,14,107,14"
+                    Content="^"
+                    FontSize="38"
+                    Click="Button_Click_6"/>
+
+
+        </Grid>
+
+    </Grid>
+</Window>
